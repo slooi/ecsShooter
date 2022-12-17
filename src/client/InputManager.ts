@@ -5,12 +5,15 @@ type KeysDown = {
 };
 
 export default class InputManager {
-	keysDown: KeysDown;
+	private _keysDown: KeysDown;
+	public get keysDown(): KeysDown {
+		return this._keysDown;
+	}
 	constructor() {
-		this.keysDown = {
+		this._keysDown = {
 			"": false,
 		};
-		setupEventListeners(this.keysDown);
+		setupEventListeners(this._keysDown);
 	}
 }
 
