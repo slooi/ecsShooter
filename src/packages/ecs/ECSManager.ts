@@ -157,7 +157,7 @@ export class ECSManager {
 	// UPDATE
 	updateSystems() {
 		for (let system of this.systems) {
-			system.update();
+			system.update(this);
 		}
 	}
 

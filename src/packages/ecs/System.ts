@@ -1,4 +1,6 @@
+import { ECSManager } from "./ECSManager";
+
 export abstract class System {
 	constructor() {}
-	abstract update(...args: unknown[]): void;
+	abstract update(ecsManager: ECSManager): void;
 }
