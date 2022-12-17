@@ -1,4 +1,6 @@
+import ControllableComponent from "../ecs/components/ControllableComponent";
 import Position2DComponent from "../ecs/components/Position2DComponent";
+import ControllableSystem from "../ecs/systems/ControllableSystem";
 import RendererSystem from "../ecs/systems/RendererSystem";
 import { ECSManager } from "../packages/ecs";
 import InputManager from "./InputManager";
@@ -24,10 +26,15 @@ const inputManager = new InputManager();
 const ecsManager = new ECSManager();
 
 // ADD ENTITIES
-ecsManager.addEntity(new Position2DComponent(10, 15));
+ecsManager.addEntity(new Position2DComponent(10, 15), new ControllableComponent());
 ecsManager.addEntity(new Position2DComponent(10, 150));
 
 // ADD SYSTEMS
-ecsManager.addSystems(new RendererSystem(canvas));
+ecsManager.addSystems(new ControllableSystem(inputManager), new RendererSystem(canvas));
 
-ecsManager.updateSystems();
+function updateLoop() {
+	ecsManager.updateSystems();
+
+	requestAnimationFrame(updateLoop);
+}
+updateLoop();
