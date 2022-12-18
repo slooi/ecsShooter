@@ -1,4 +1,4 @@
-import { ECSManager, System } from "../../packages/ecs";
+import { ECSManager, System } from "../../../packages/ecs";
 import MoveRandomComponent from "../components/MoveRandomComponent";
 import Position2DComponent from "../components/Position2DComponent";
 

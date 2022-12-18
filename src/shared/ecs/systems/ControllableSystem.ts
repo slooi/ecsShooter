@@ -1,5 +1,5 @@
-import InputManager from "../../client/InputManager";
-import { ECSManager, System } from "../../packages/ecs";
+import InputManager from "../../../client/InputManager";
+import { ECSManager, System } from "../../../packages/ecs";
 import ControllableComponent from "../components/ControllableComponent";
 import Position2DComponent from "../components/Position2DComponent";
 

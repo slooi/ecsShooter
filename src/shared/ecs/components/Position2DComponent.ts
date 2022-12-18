@@ -1,4 +1,4 @@
-import { Component } from "../../packages/ecs";
+import { Component } from "../../../packages/ecs";
 
 export default class Position2DComponent extends Component {
 	private _x: number;
