@@ -1,7 +1,8 @@
-import InputManager from "../../../client/InputManager";
-import { ECSManager, System } from "../../../packages/ecs";
-import ControllableComponent from "../components/ControllableComponent";
-import Position2DComponent from "../components/Position2DComponent";
+import InputManager from "../../../client/InputManager.js";
+import { ECSManager } from "../../../packages/ecs/ECSManager.js";
+import { System } from "../../../packages/ecs/System.js";
+import ControllableComponent from "../components/ControllableComponent.js";
+import Position2DComponent from "../components/Position2DComponent.js";
 
 export default class ControllableSystem extends System {
 	inputManager: InputManager;

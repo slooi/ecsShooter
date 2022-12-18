@@ -1,4 +1,4 @@
-import { KeyCodes } from "../../types";
+import { KeyCodes } from "../../types.js";
 
 type KeysDown = {
 	[key in KeyCodes]?: boolean;

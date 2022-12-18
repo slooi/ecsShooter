@@ -1,6 +1,7 @@
-import { ECSManager, System } from "../../../packages/ecs";
-import Position2DComponent from "../components/Position2DComponent";
-import RenderableComponent from "../components/RenderableComponent";
+import { ECSManager } from "../../../packages/ecs/ECSManager.js";
+import { System } from "../../../packages/ecs/System.js";
+import Position2DComponent from "../components/Position2DComponent.js";
+import RenderableComponent from "../components/RenderableComponent.js";
 
 export default class RendererSystem extends System {
 	canvas: HTMLCanvasElement;

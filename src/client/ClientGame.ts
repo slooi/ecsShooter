@@ -1,12 +1,12 @@
-import ControllableComponent from "../shared/ecs/components/ControllableComponent";
-import MoveRandomComponent from "../shared/ecs/components/MoveRandomComponent";
-import Position2DComponent from "../shared/ecs/components/Position2DComponent";
-import RenderableComponent from "../shared/ecs/components/RenderableComponent";
-import ControllableSystem from "../shared/ecs/systems/ControllableSystem";
-import MoveRandomSystem from "../shared/ecs/systems/MoveRandomSystem";
-import RendererSystem from "../shared/ecs/systems/RendererSystem";
-import { ECSManager } from "../packages/ecs";
-import InputManager from "./InputManager";
+import ControllableComponent from "../shared/ecs/components/ControllableComponent.js";
+import MoveRandomComponent from "../shared/ecs/components/MoveRandomComponent.js";
+import Position2DComponent from "../shared/ecs/components/Position2DComponent.js";
+import RenderableComponent from "../shared/ecs/components/RenderableComponent.js";
+import ControllableSystem from "../shared/ecs/systems/ControllableSystem.js";
+import MoveRandomSystem from "../shared/ecs/systems/MoveRandomSystem.js";
+import RendererSystem from "../shared/ecs/systems/RendererSystem.js";
+import { ECSManager } from "../packages/ecs/ECSManager.js";
+import InputManager from "./InputManager.js";
 
 export default class ClientGame {
 	constructor() {

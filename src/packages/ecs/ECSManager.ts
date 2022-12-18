@@ -1,4 +1,8 @@
-import { Component, System, Entity } from ".";
+// import { Component, System, Entity } from ".";
+
+import { Component } from "./Component.js";
+import { Entity } from "./Entity.js";
+import { System } from "./System.js";
 
 type ComponentConstructor<T extends Component = Component> = new (...args: any) => T;
 type SystemConstructor = new (...args: any) => System;

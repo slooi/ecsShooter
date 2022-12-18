@@ -1,6 +1,7 @@
-import { ECSManager, System } from "../../../packages/ecs";
-import MoveRandomComponent from "../components/MoveRandomComponent";
-import Position2DComponent from "../components/Position2DComponent";
+import { ECSManager } from "../../../packages/ecs/ECSManager.js";
+import { System } from "../../../packages/ecs/System.js";
+import MoveRandomComponent from "../components/MoveRandomComponent.js";
+import Position2DComponent from "../components/Position2DComponent.js";
 
 export default class MoveRandomSystem extends System {
 	update(ecsManager: ECSManager): void {

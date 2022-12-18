@@ -1,4 +1,4 @@
-import ClientGame from "./ClientGame";
+import ClientGame from "./ClientGame.js";
 
 // WEBSOCKET
 const ws = new WebSocket("ws://localhost:8080/"); //!@#!@#!@# CHANGE LATER
