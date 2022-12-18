@@ -10,9 +10,7 @@ export default class InputManager {
 		return this._keysDown;
 	}
 	constructor() {
-		this._keysDown = {
-			"": false,
-		};
+		this._keysDown = {};
 		setupEventListeners(this._keysDown);
 	}
 }
@@ -21,13 +19,9 @@ function setupEventListeners(keysDown: KeysDown) {
 	window.addEventListener("keydown", (e) => {
 		const keyCode = e.code as KeyCodes;
 		keysDown[keyCode] = true;
-		console.log("down: " + keyCode);
-		console.log(keysDown);
 	});
 	window.addEventListener("keyup", (e) => {
 		const keyCode = e.code as KeyCodes;
 		keysDown[keyCode] = false;
-		console.log("up: " + keyCode);
-		console.log(keysDown);
 	});
 }
