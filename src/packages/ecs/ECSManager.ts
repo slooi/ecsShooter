@@ -99,7 +99,6 @@ export class ECSManager {
 		for (const componentConstructor of componentConstructorArray) {
 			str += componentConstructor.name + " ";
 		}
-		console.log("INPUTS componentConstructor(s): " + str);
 
 		// Get the corresponding entitySet for each ComponentConstructor.
 		const nonEmptyEntitySetArray: Set<Entity>[] = [];
