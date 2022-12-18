@@ -1,5 +1,6 @@
 import { ECSManager, System } from "../../packages/ecs";
 import Position2DComponent from "../components/Position2DComponent";
+import RenderableComponent from "../components/RenderableComponent";
 
 export default class RendererSystem extends System {
 	canvas: HTMLCanvasElement;
@@ -13,9 +14,9 @@ export default class RendererSystem extends System {
 		this.c = c;
 	}
 	update(ecsManager: ECSManager): void {
-		console.log("UPDATE RENDERERSYSTEM");
-		const entities = ecsManager.view(Position2DComponent);
+		const entities = ecsManager.view(Position2DComponent, RenderableComponent);
 
+		this.c.clearRect(0, 0, this.canvas.width, this.canvas.height);
 		entities.forEach((entity) => {
 			const positionComponent = entity[1].get(Position2DComponent);
 			const x = positionComponent.x;
@@ -23,7 +24,6 @@ export default class RendererSystem extends System {
 			this.c.beginPath();
 			this.c.arc(x, y, 15, 0, Math.PI * 2);
 			this.c.stroke();
-			// this.c.closePath();
 		});
 	}
 }
