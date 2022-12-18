@@ -22,7 +22,7 @@ export default class Game {
 
 		// ADD ENTITIES
 		ecsManager.addEntity(new Position2DComponent(10, 15), new ControllableComponent(), new RenderableComponent());
-		for (let i = 0; i < 1000; i++) {
+		for (let i = 0; i < 250; i++) {
 			ecsManager.addEntity(
 				new Position2DComponent(Math.random() * 200 + 250 - 100, Math.random() * 200 + 250 - 100),
 				new MoveRandomComponent(),
