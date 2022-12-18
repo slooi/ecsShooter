@@ -1,10 +1,10 @@
-import ControllableComponent from "../ecs/components/ControllableComponent";
-import MoveRandomComponent from "../ecs/components/MoveRandomComponent";
-import Position2DComponent from "../ecs/components/Position2DComponent";
-import RenderableComponent from "../ecs/components/RenderableComponent";
-import ControllableSystem from "../ecs/systems/ControllableSystem";
-import MoveRandomSystem from "../ecs/systems/MoveRandomSystem";
-import RendererSystem from "../ecs/systems/RendererSystem";
+import ControllableComponent from "../shared/ecs/components/ControllableComponent";
+import MoveRandomComponent from "../shared/ecs/components/MoveRandomComponent";
+import Position2DComponent from "../shared/ecs/components/Position2DComponent";
+import RenderableComponent from "../shared/ecs/components/RenderableComponent";
+import ControllableSystem from "../shared/ecs/systems/ControllableSystem";
+import MoveRandomSystem from "../shared/ecs/systems/MoveRandomSystem";
+import RendererSystem from "../shared/ecs/systems/RendererSystem";
 import { ECSManager } from "../packages/ecs";
 import InputManager from "./InputManager";
 

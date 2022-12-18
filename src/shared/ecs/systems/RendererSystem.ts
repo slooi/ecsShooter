@@ -1,4 +1,4 @@
-import { ECSManager, System } from "../../packages/ecs";
+import { ECSManager, System } from "../../../packages/ecs";
 import Position2DComponent from "../components/Position2DComponent";
 import RenderableComponent from "../components/RenderableComponent";
 
