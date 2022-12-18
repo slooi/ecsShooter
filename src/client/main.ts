@@ -1,4 +1,4 @@
-import Game from "./Game";
+import ClientGame from "./ClientGame";
 
 // WEBSOCKET
 const ws = new WebSocket("ws://localhost:8080/"); //!@#!@#!@# CHANGE LATER
@@ -10,4 +10,4 @@ ws.addEventListener("message", (e) => {
 	console.log(e.data);
 });
 
-const game = new Game();
+const clientGame = new ClientGame();

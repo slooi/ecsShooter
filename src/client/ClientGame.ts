@@ -8,7 +8,7 @@ import RendererSystem from "../shared/ecs/systems/RendererSystem";
 import { ECSManager } from "../packages/ecs";
 import InputManager from "./InputManager";
 
-export default class Game {
+export default class ClientGame {
 	constructor() {
 		//
 		const canvas = document.createElement("canvas");
